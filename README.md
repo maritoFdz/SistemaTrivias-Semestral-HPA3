@@ -172,26 +172,85 @@ La aplicación **no utiliza `root`**. Se conecta con el usuario `app_trivias`, q
 > Agregar aquí las capturas (guardarlas en `docs/img/`).
 
 ### Inicio público
+<img width="1920" height="1012" alt="image" src="https://github.com/user-attachments/assets/c1c234d3-e0dc-425e-9ad2-0ac3d0839ba8" />
+
 
 ### Inicio de sesión
+<img width="1920" height="1018" alt="image" src="https://github.com/user-attachments/assets/02860910-6eaf-4942-8325-cc28a353ef51" />
+
 
 ### Registro de jugadores
+<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/768377a0-4b37-485c-a540-dbbc844d89ce" />
+
 
 ### Panel del jugador (Dashboard)
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/7d952131-3b46-47ee-81bd-f91a989c20e1" />
+
 
 ### Selección de tema y niveles
+<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/db22f42a-53a8-4c53-a48b-f01370618b96" />
+
 
 ### Partida en curso
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/acec5434-7308-4ec2-8853-003b7fb8c07c" />
+
+<img width="1920" height="1021" alt="image" src="https://github.com/user-attachments/assets/40003e02-d821-4ad1-ba15-3980e27808b5" />
+
+
 
 ### Resultado de la partida
+<img width="1574" height="826" alt="image" src="https://github.com/user-attachments/assets/57e8b377-7a84-4383-a821-5c61544db5a4" />
+
+<img width="1920" height="1021" alt="image" src="https://github.com/user-attachments/assets/37edf8a9-77ff-4446-a155-3d954ff2c402" />
+
 
 ### Ranking
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/cef825d7-56b7-45e0-948a-0e6ecafc9257" />
+
 
 ### Administración (usuarios, temas, preguntas, premios)
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/3b698285-6ca1-4632-942a-cbe1f7f9db85" />
+
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/f26debdb-a4d0-42c6-80fb-d5735e2f1625" />
+
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/b52f9469-c7d2-4a03-b5fa-711114c183e6" />
+
+<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/33970072-10e1-4b40-86a0-0294cdeb2e30" />
+
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/d3b6c3dd-9894-4e6d-b600-e00674e73eac" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4832c64c-b9a5-495e-869e-25fc5bc99e9d" />
+
+<img width="1920" height="1019" alt="image" src="https://github.com/user-attachments/assets/8669a447-2be8-431a-b52c-a646f2fe11e9" />
+
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/1bf46529-d1ce-4973-a14d-e46d86e85cd6" />
+
+
+### Avatares
+<img width="1919" height="1020" alt="image" src="https://github.com/user-attachments/assets/06036f7c-cf90-45dc-8b08-0ad3c849047b" />
+
+<img width="1920" height="1057" alt="image" src="https://github.com/user-attachments/assets/59135271-bf77-487a-823a-da785787815d" />
+
+
+### Noticias
+<img width="1902" height="854" alt="image" src="https://github.com/user-attachments/assets/eb1d645a-97bb-4973-b571-c7d782587568" />
+
+<img width="1920" height="1017" alt="image" src="https://github.com/user-attachments/assets/79b3fec9-0896-4304-ba5e-cf4483a298f8" />
+
 
 ### Sets QR
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/408ebdaa-2b41-4802-8cca-80e5617cb6e3" />
+
+<img width="1920" height="1021" alt="image" src="https://github.com/user-attachments/assets/0a2916dd-69e3-429e-9523-3972ce06a5ba" />
+
 
 ### Reportes y Excel
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/40b0a988-4e99-419d-926a-33275a490d55" />
+
+<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/17754fd5-3402-40e2-b407-462ffc10f0ba" />
+
+<img width="1920" height="1021" alt="image" src="https://github.com/user-attachments/assets/0c6332fa-9629-42f2-b310-e2fa842ca238" />
+
 
 ## 📁 Estructura de Carpetas o Directorios
 
