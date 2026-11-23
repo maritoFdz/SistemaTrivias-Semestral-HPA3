@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="QrImagen.ashx.cs" Class="Presentacion.Pages.QrImagen" %>

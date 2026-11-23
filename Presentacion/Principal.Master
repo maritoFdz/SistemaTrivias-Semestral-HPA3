@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.Master.cs" Inherits="Presentacion.Principal" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Trivias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body class="bg-light">
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <asp:HyperLink ID="lnkInicio" runat="server" NavigateUrl="~/Pages/Dashboard.aspx" CssClass="navbar-brand">Sistema de Trivias</asp:HyperLink>
+                <div class="d-flex align-items-center">
+                    <asp:PlaceHolder ID="phAdmin" runat="server" Visible="false">
+                        <div class="dropdown me-3">
+                            <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">Administrar</button>
+                            <ul class="dropdown-menu">
+                                <li><asp:HyperLink ID="lnkUsuarios" runat="server" NavigateUrl="~/Pages/Usuarios.aspx" CssClass="dropdown-item">Usuarios</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkTemas" runat="server" NavigateUrl="~/Pages/Temas.aspx" CssClass="dropdown-item">Temas</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkPreguntas" runat="server" NavigateUrl="~/Pages/Preguntas.aspx" CssClass="dropdown-item">Preguntas</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkPremios" runat="server" NavigateUrl="~/Pages/Premios.aspx" CssClass="dropdown-item">Premios</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkNoticias" runat="server" NavigateUrl="~/Pages/Noticias.aspx" CssClass="dropdown-item">Noticias</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkCalificaciones" runat="server" NavigateUrl="~/Pages/Calificaciones.aspx" CssClass="dropdown-item">Calificaciones</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkImagenes" runat="server" NavigateUrl="~/Pages/ImagenesResultado.aspx" CssClass="dropdown-item">Imágenes de resultado</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkSetsQr" runat="server" NavigateUrl="~/Pages/SetsQr.aspx" CssClass="dropdown-item">Sets QR</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="lnkReportes" runat="server" NavigateUrl="~/Pages/Reportes.aspx" CssClass="dropdown-item">Reportes</asp:HyperLink></li>
+                            </ul>
+                        </div>
+                    </asp:PlaceHolder>
+                    <asp:HyperLink ID="lnkAvatares" runat="server" NavigateUrl="~/Pages/Avatares.aspx" CssClass="btn btn-outline-light btn-sm me-3" Visible="false">Avatares</asp:HyperLink>
+                    <asp:Image ID="imgAvatar" runat="server" CssClass="rounded-circle me-2" Width="32" Height="32" Style="object-fit:cover;" Visible="false" />
+                    <asp:HyperLink ID="lnkJugar" runat="server" NavigateUrl="~/Pages/Jugar.aspx" CssClass="btn btn-success btn-sm me-2" Visible="false">Jugar</asp:HyperLink>
+                    <asp:HyperLink ID="lnkRanking" runat="server" NavigateUrl="~/Pages/Ranking.aspx" CssClass="btn btn-outline-light btn-sm me-2" Visible="false">Ranking</asp:HyperLink>
+                    <asp:Label ID="lblUsuario" runat="server" CssClass="navbar-text me-3" Visible="false" />
+                    <asp:LinkButton ID="lnkSalir" runat="server" CssClass="btn btn-outline-light btn-sm" CausesValidation="false" Visible="false" OnClick="lnkSalir_Click">Salir</asp:LinkButton>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container py-4">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </main>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="scripts" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

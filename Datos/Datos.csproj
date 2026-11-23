@@ -87,6 +87,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexionBD.cs" />
+    <Compile Include="D_Avatar.cs" />
+    <Compile Include="D_Calificacion.cs" />
+    <Compile Include="D_ImagenResultado.cs" />
+    <Compile Include="D_Juego.cs" />
+    <Compile Include="D_LogError.cs" />
+    <Compile Include="D_Noticia.cs" />
+    <Compile Include="D_Pregunta.cs" />
+    <Compile Include="D_Premio.cs" />
+    <Compile Include="D_Reporte.cs" />
+    <Compile Include="D_SetQr.cs" />
+    <Compile Include="D_Tema.cs" />
+    <Compile Include="D_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

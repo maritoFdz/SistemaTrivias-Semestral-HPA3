@@ -113,16 +113,264 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Pages\Avatares.aspx" />
+    <Content Include="Pages\AvatarForm.aspx" />
+    <Content Include="Pages\Calificaciones.aspx" />
+    <Content Include="Pages\Calificar.aspx" />
+    <Content Include="Pages\Dashboard.aspx" />
+    <Content Include="Pages\ImagenesResultado.aspx" />
+    <Content Include="Pages\ImagenResultadoForm.aspx" />
+    <Content Include="Pages\Inicio.aspx" />
+    <Content Include="Pages\Jugar.aspx" />
+    <Content Include="Pages\JugarQr.aspx" />
+    <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\NoticiaForm.aspx" />
+    <Content Include="Pages\Noticias.aspx" />
+    <Content Include="Pages\Partida.aspx" />
+    <Content Include="Pages\PreguntaForm.aspx" />
+    <Content Include="Pages\Preguntas.aspx" />
+    <Content Include="Pages\PremioForm.aspx" />
+    <Content Include="Pages\Premios.aspx" />
+    <Content Include="Pages\Ranking.aspx" />
+    <Content Include="Pages\Registro.aspx" />
+    <Content Include="Pages\Reportes.aspx" />
+    <Content Include="Pages\Resultado.aspx" />
+    <Content Include="Pages\SetQrVer.aspx" />
+    <Content Include="Pages\SetsQr.aspx" />
+    <Content Include="Pages\TemaForm.aspx" />
+    <Content Include="Pages\Temas.aspx" />
+    <Content Include="Pages\UsuarioForm.aspx" />
+    <Content Include="Pages\Usuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Navegacion.cs" />
+    <Compile Include="Clases\PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Avatares.aspx.cs">
+      <DependentUpon>Avatares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Avatares.aspx.designer.cs">
+      <DependentUpon>Avatares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AvatarForm.aspx.cs">
+      <DependentUpon>AvatarForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AvatarForm.aspx.designer.cs">
+      <DependentUpon>AvatarForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Calificaciones.aspx.cs">
+      <DependentUpon>Calificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Calificaciones.aspx.designer.cs">
+      <DependentUpon>Calificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Calificar.aspx.cs">
+      <DependentUpon>Calificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Calificar.aspx.designer.cs">
+      <DependentUpon>Calificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ImagenesResultado.aspx.cs">
+      <DependentUpon>ImagenesResultado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ImagenesResultado.aspx.designer.cs">
+      <DependentUpon>ImagenesResultado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ImagenResultadoForm.aspx.cs">
+      <DependentUpon>ImagenResultadoForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ImagenResultadoForm.aspx.designer.cs">
+      <DependentUpon>ImagenResultadoForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Jugar.aspx.cs">
+      <DependentUpon>Jugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Jugar.aspx.designer.cs">
+      <DependentUpon>Jugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JugarQr.aspx.cs">
+      <DependentUpon>JugarQr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JugarQr.aspx.designer.cs">
+      <DependentUpon>JugarQr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NoticiaForm.aspx.cs">
+      <DependentUpon>NoticiaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NoticiaForm.aspx.designer.cs">
+      <DependentUpon>NoticiaForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Noticias.aspx.cs">
+      <DependentUpon>Noticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Noticias.aspx.designer.cs">
+      <DependentUpon>Noticias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Partida.aspx.cs">
+      <DependentUpon>Partida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Partida.aspx.designer.cs">
+      <DependentUpon>Partida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PreguntaForm.aspx.cs">
+      <DependentUpon>PreguntaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PreguntaForm.aspx.designer.cs">
+      <DependentUpon>PreguntaForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Preguntas.aspx.cs">
+      <DependentUpon>Preguntas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Preguntas.aspx.designer.cs">
+      <DependentUpon>Preguntas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PremioForm.aspx.cs">
+      <DependentUpon>PremioForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PremioForm.aspx.designer.cs">
+      <DependentUpon>PremioForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Premios.aspx.cs">
+      <DependentUpon>Premios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Premios.aspx.designer.cs">
+      <DependentUpon>Premios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\QrImagen.ashx.cs">
+      <DependentUpon>QrImagen.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ranking.aspx.cs">
+      <DependentUpon>Ranking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ranking.aspx.designer.cs">
+      <DependentUpon>Ranking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Resultado.aspx.cs">
+      <DependentUpon>Resultado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Resultado.aspx.designer.cs">
+      <DependentUpon>Resultado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SetQrVer.aspx.cs">
+      <DependentUpon>SetQrVer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SetQrVer.aspx.designer.cs">
+      <DependentUpon>SetQrVer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SetsQr.aspx.cs">
+      <DependentUpon>SetsQr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SetsQr.aspx.designer.cs">
+      <DependentUpon>SetsQr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TemaForm.aspx.cs">
+      <DependentUpon>TemaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TemaForm.aspx.designer.cs">
+      <DependentUpon>TemaForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Temas.aspx.cs">
+      <DependentUpon>Temas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Temas.aspx.designer.cs">
+      <DependentUpon>Temas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UsuarioForm.aspx.cs">
+      <DependentUpon>UsuarioForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UsuarioForm.aspx.designer.cs">
+      <DependentUpon>UsuarioForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publica.Master.cs">
+      <DependentUpon>Publica.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publica.Master.designer.cs">
+      <DependentUpon>Publica.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Principal.Master" />
+    <Content Include="Publica.Master" />
+    <Content Include="Pages\QrImagen.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

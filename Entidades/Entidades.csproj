@@ -41,7 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="E_Avatar.cs" />
+    <Compile Include="E_Calificacion.cs" />
+    <Compile Include="E_ImagenResultado.cs" />
+    <Compile Include="E_Nivel.cs" />
+    <Compile Include="E_NivelJuego.cs" />
+    <Compile Include="E_Noticia.cs" />
+    <Compile Include="E_Opcion.cs" />
+    <Compile Include="E_PartidaEnCurso.cs" />
+    <Compile Include="E_Pregunta.cs" />
+    <Compile Include="E_Premio.cs" />
+    <Compile Include="E_RankingItem.cs" />
+    <Compile Include="E_Reporte.cs" />
+    <Compile Include="E_ResultadoPartida.cs" />
+    <Compile Include="E_SetQr.cs" />
+    <Compile Include="E_Tema.cs" />
+    <Compile Include="E_TemaProgreso.cs" />
+    <Compile Include="E_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
