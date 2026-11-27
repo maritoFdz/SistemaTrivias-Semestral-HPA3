@@ -6,6 +6,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Label ID="lblMensaje" runat="server" Visible="false" />
 
+    <audio id="musica" src="<%= ResolveUrl("~/Audio/musica.wav") %>" loop preload="auto"></audio>
+    <audio id="sfxCorrecto" src="<%= ResolveUrl("~/Audio/correcto.wav") %>" preload="auto"></audio>
+    <audio id="sfxIncorrecto" src="<%= ResolveUrl("~/Audio/incorrecto.wav") %>" preload="auto"></audio>
+    <audio id="sfxTick" src="<%= ResolveUrl("~/Audio/tick.wav") %>" preload="auto"></audio>
+
+    <div class="text-end mb-2">
+        <button type="button" id="btnMute" class="btn btn-sm btn-outline-secondary">🔊</button>
+    </div>
+
     <asp:Panel ID="pnlJuego" runat="server" CssClass="card shadow-sm">
         <div class="card-body p-4">
             <div class="d-flex justify-content-between mb-2">
@@ -44,6 +53,45 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
     <script>
         (function () {
+            var musica = document.getElementById('musica');
+            var btn = document.getElementById('btnMute');
+            var mute = sessionStorage.getItem('mute') === '1'; // se recuerda entre preguntas
+            var pos = parseFloat(sessionStorage.getItem('musicaPos') || '0');
+
+            musica.volume = 0.3; // bajita para que no tape los efectos
+            musica.muted = mute;
+            if (musica.readyState >= 1) musica.currentTime = pos;
+            else musica.addEventListener('loadedmetadata', function () { musica.currentTime = pos; }); // sigue donde iba
+
+            function tocar() { musica.play().catch(function () { }); }
+            tocar();
+            document.addEventListener('click', tocar, { once: true }); // por si el navegador bloqueo el autoplay
+
+            window.addEventListener('pagehide', function () { sessionStorage.setItem('musicaPos', musica.currentTime); }); // guarda el segundo antes del postback
+
+            function pintarMute() { btn.textContent = mute ? '🔇' : '🔊'; }
+            pintarMute();
+            btn.addEventListener('click', function () {
+                mute = !mute;
+                musica.muted = mute;
+                sessionStorage.setItem('mute', mute ? '1' : '0');
+                pintarMute();
+            });
+
+            window.sonar = function (id) { // efectos cortos
+                if (mute) return;
+                var a = document.getElementById(id);
+                a.currentTime = 0;
+                a.play().catch(function () { });
+            };
+
+            var sonido = '<%= Sonido %>';
+            if (sonido === 'correcto') sonar('sfxCorrecto');
+            if (sonido === 'incorrecto') sonar('sfxIncorrecto');
+        })();
+    </script>
+    <script>
+        (function () {
             var barra = document.getElementById('barra');
             if (!barra) return; // no hay pregunta en pantalla
             var total = <%= SegundosTotales %>;
@@ -58,6 +106,7 @@
             var t = setInterval(function () {
                 resta--;
                 pintar();
+                if (resta > 0 && resta <= 5) sonar('sfxTick'); // presion en los ultimos 5 segundos
                 if (resta <= 0) { clearInterval(t); document.getElementById('<%= btnTiempo.ClientID %>').click(); } // se acabo el tiempo y se envia sin opcion
             }, 1000);
         })();

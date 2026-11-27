@@ -43,3 +43,18 @@
         </div>
     </asp:Panel>
 </asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
+    <% if (Res != null) { %>
+    <audio id="sfxFinal" src="<%= ResolveUrl(Res.Aprobado ? "~/Audio/victoria.wav" : "~/Audio/derrota.wav") %>" preload="auto"></audio>
+    <% } %>
+    <script>
+        sessionStorage.removeItem('musicaPos'); // la proxima partida empieza la cancion desde cero
+        (function () {
+            var a = document.getElementById('sfxFinal');
+            if (!a || sessionStorage.getItem('mute') === '1') return; // respeta el boton de silencio
+            a.volume = 0.6;
+            a.play().catch(function () { });
+        })();
+    </script>
+</asp:Content>

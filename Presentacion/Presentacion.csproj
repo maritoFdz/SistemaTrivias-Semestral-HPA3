@@ -112,6 +112,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Audio\correcto.wav" />
+    <Content Include="Audio\derrota.wav" />
+    <Content Include="Audio\incorrecto.wav" />
+    <Content Include="Audio\musica.wav" />
+    <Content Include="Audio\tick.wav" />
+    <Content Include="Audio\victoria.wav" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Avatares.aspx" />
     <Content Include="Pages\AvatarForm.aspx" />

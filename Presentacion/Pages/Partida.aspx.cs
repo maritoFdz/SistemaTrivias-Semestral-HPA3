@@ -12,6 +12,7 @@ namespace Presentacion.Pages
         private E_PartidaEnCurso _partida;
         protected int SegundosTotales;
         protected int SegundosRestantes;
+        protected string Sonido = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -88,6 +89,7 @@ namespace Presentacion.Pages
             {
                 _servicio.Responder(UsuarioActual, _partida, idOpcion);
                 Session["Partida"] = _partida;
+                Sonido = _partida.Ultima.Correcta ? "correcto" : "incorrecto";
             }
             catch (ArgumentException ex) { error = ex.Message; }
             catch (InvalidOperationException ex) { error = ex.Message; }
